@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = calculator-qml1.0.0
-DISTDIR = /home/ec2-user/TE_Coverity_DevOps_PC/coverity/calculator-qml/.tmp/calculator-qml1.0.0
+DISTDIR = /home/ec2-user/qt-everywhere-src-6.8.1/TE_Coverity_DevOps_PC/coverity/calculator-qml-dir/.tmp/calculator-qml1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1 -Wl,-rpath,/usr/local/qt6/lib -Wl,-rpath-link,/usr/local/qt6/lib
 LIBS          = $(SUBLIBS) /usr/local/qt6/lib/libQt6Gui.so /usr/local/qt6/lib/libQt6Qml.so /usr/local/qt6/lib/libQt6Network.so /usr/local/qt6/lib/libQt6Scxml.so /usr/local/qt6/lib/libQt6Core.so -lpthread -lGLX -lOpenGL   
@@ -369,6 +369,7 @@ DIST          = /usr/local/qt6/mkspecs/features/spec_pre.prf \
 		/usr/local/qt6/mkspecs/features/qt_config.prf \
 		/usr/local/qt6/mkspecs/linux-g++/qmake.conf \
 		/usr/local/qt6/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/local/qt6/mkspecs/features/exclusive_builds.prf \
 		/usr/local/qt6/mkspecs/features/toolchain.prf \
 		/usr/local/qt6/mkspecs/features/default_pre.prf \
@@ -713,6 +714,7 @@ Makefile: calculator-qml.pro /usr/local/qt6/mkspecs/linux-g++/qmake.conf /usr/lo
 		/usr/local/qt6/mkspecs/features/qt_config.prf \
 		/usr/local/qt6/mkspecs/linux-g++/qmake.conf \
 		/usr/local/qt6/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/local/qt6/mkspecs/features/exclusive_builds.prf \
 		/usr/local/qt6/mkspecs/features/toolchain.prf \
 		/usr/local/qt6/mkspecs/features/default_pre.prf \
@@ -1053,6 +1055,7 @@ Makefile: calculator-qml.pro /usr/local/qt6/mkspecs/linux-g++/qmake.conf /usr/lo
 /usr/local/qt6/mkspecs/features/qt_config.prf:
 /usr/local/qt6/mkspecs/linux-g++/qmake.conf:
 /usr/local/qt6/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /usr/local/qt6/mkspecs/features/exclusive_builds.prf:
 /usr/local/qt6/mkspecs/features/toolchain.prf:
 /usr/local/qt6/mkspecs/features/default_pre.prf:
