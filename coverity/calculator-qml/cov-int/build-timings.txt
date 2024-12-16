@@ -1,0 +1,27 @@
+# Version: 78329b8295 p-2023.12-push-50
+# Command Line: cov-build --dir cov-int make -f calculator
+timer                             ms      calls
+-----------------------------------------------
+cov-build                         82          1
+  create_or_open emit DB           6          1
+    open emit DB                   6          1
+  add_string_to_table              0          8
+  addEmitFileName                  0          1
+  addEnvironmentVars               1          1
+    add_string_to_table            1         35
+  Prepare capture                  1          1
+  Running build command            8          1
+  SecurityDA                      60          1
+  (left over)                      6
+
+activity                          ms      calls
+-----------------------------------------------
+cov-build                         82          1
+create_or_open emit DB             6          1
+open emit DB                       6          1
+add_string_to_table                1         43
+addEmitFileName                    0          1
+addEnvironmentVars                 1          1
+Prepare capture                    1          1
+Running build command              8          1
+SecurityDA                        60          1
